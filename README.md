@@ -38,3 +38,10 @@ cards and the press kit facts.
 
 When the store page exists, set `STEAM_URL` at the top of `site.js`. Every Wishlist / Steam link
 then points there and the big button reads "Wishlist on Steam".
+
+## Store page mock-up
+
+`store-mockup/` is a planning mock-up of a store page (placeholder AI capsules in
+`store-mockup/img/`, everything else from `images/`), at `/store-mockup/` on the live site, for
+getting feedback. It is marked noindex and labelled as a mock-up; delete the folder when the real
+store page exists.

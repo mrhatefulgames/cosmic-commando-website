@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cosmic Commando: store page mock-up</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#1b2838; --bg2:#16202d; --panel:#0e1621; --text:#c6d4df; --dim:#8f98a0; --link:#66c0f4; --green:#5c7e10; --tag:#384959; }
+  * { box-sizing:border-box; }
+  body { margin:0; background: radial-gradient(ellipse at top, #2a3f5a 0%, var(--bg) 40%, var(--bg2) 100%); color:var(--text); font:500 15px/1.5 "Rajdhani", Arial, sans-serif; }
+  .note { background:#3a1f00; color:#ffcf8a; text-align:center; padding:8px 16px; font-size:14px; }
+  .wrap { max-width:960px; margin:0 auto; padding:16px; }
+  .crumbs { color:var(--dim); font-size:13px; }
+  h1 { font-family:"Orbitron",sans-serif; font-weight:700; font-size:26px; color:#fff; margin:4px 0 14px; letter-spacing:.03em; }
+  .top { display:grid; grid-template-columns: 1fr 324px; gap:14px; }
+  .media { background:#000; min-width:0; }
+  .top > *, .cols > * { min-width:0; }
+  .media .main { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+  .strip { display:flex; gap:4px; overflow-x:auto; padding:6px 0; background:var(--panel); }
+  .strip img { height:65px; aspect-ratio:16/9; object-fit:cover; cursor:pointer; opacity:.75; }
+  .strip img:hover, .strip img.on { opacity:1; outline:2px solid #fff; }
+  .side img.cap { width:100%; display:block; }
+  .side .desc { padding:10px 0; font-size:14px; }
+  .meta { font-size:13px; color:var(--dim); display:grid; grid-template-columns:110px 1fr; gap:2px 8px; }
+  .meta b { color:var(--link); font-weight:500; }
+  .tags { display:flex; flex-wrap:wrap; gap:4px; margin-top:10px; }
+  .tags span { background:var(--tag); color:var(--link); font-size:12px; padding:2px 7px; border-radius:2px; }
+  .wish { margin:18px 0; background:linear-gradient(90deg,#2a475e,#1b2838); padding:14px 16px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .wish h2 { margin:0; font-size:20px; color:#fff; }
+  .btn { background:linear-gradient(90deg,#75b022,#588a1b); color:#d2efa9; padding:9px 16px; border-radius:2px; text-decoration:none; font-weight:700; }
+  .cols { display:grid; grid-template-columns: 1fr 300px; gap:18px; }
+  .about h3, .box h3 { font-family:"Orbitron",sans-serif; font-size:13px; color:#fff; text-transform:uppercase; letter-spacing:.08em; border-bottom:1px solid #2a475e; padding-bottom:6px; margin:24px 0 10px; }
+  .about img { width:100%; display:block; margin:10px 0; }
+  .about p { margin:8px 0; }
+  .about .big { font-family:"Orbitron",sans-serif; color:#66c0f4; font-size:16px; margin-top:18px; }
+  .box { background:rgba(0,0,0,.2); padding:0 12px 12px; margin-bottom:12px; font-size:14px; }
+  .box ul { margin:0; padding-left:18px; }
+  .ai { font-size:13px; color:var(--dim); }
+  .caps { display:grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:12px; }
+  .caps figure { margin:0; } .caps img { width:100%; display:block; } .caps figcaption { font-size:12px; color:var(--dim); }
+  @media (max-width:800px) { .top, .cols { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="note">MOCK-UP for planning only, made with placeholder AI art. Layout modelled loosely on a game store page; not affiliated with any store. <a href="../" style="color:#ffcf8a">Back to the Cosmic Commando site</a></div>
+<div class="wrap">
+  <div class="crumbs">All Games &gt; Action Games &gt; Cosmic Commando</div>
+  <h1>Cosmic Commando</h1>
+
+  <div class="top">
+    <div class="media">
+      <img class="main" id="main" src="../images/clip_battle.gif" alt="">
+      <div class="strip" id="strip">
+        <img class="on" src="../images/clip_battle.gif" alt="">
+        <img src="../images/clip_wave.gif" alt="">
+        <img src="../images/battle_thumb.jpg" data-full="../images/battle.jpg" alt="">
+        <img src="../images/destroyer_thumb.jpg" data-full="../images/destroyer.jpg" alt="">
+        <img src="../images/dock_thumb.jpg" data-full="../images/dock.jpg" alt="">
+        <img src="../images/station_thumb.jpg" data-full="../images/station.jpg" alt="">
+        <img src="../images/galaxy_thumb.jpg" data-full="../images/galaxy.jpg" alt="">
+        <img src="../images/planet_thumb.jpg" data-full="../images/planet.jpg" alt="">
+        <img src="../images/mainmenu_thumb.jpg" data-full="../images/mainmenu.jpg" alt="">
+      </div>
+    </div>
+    <div class="side">
+      <img class="cap" src="img/header_920x430.jpg" alt="Header capsule">
+      <div class="desc">Defend humanity's real star systems in a single ship. Take missions from orbital stations, answer Mayday calls from embattled fleets and push the alien Horde back from Earth to Alpha Centauri and beyond.</div>
+      <div class="meta">
+        <span>ALL REVIEWS:</span><span>No user reviews</span>
+        <span>RELEASE DATE:</span><span>Coming soon</span>
+        <span>DEVELOPER:</span><b>MrHateful Games</b>
+        <span>PUBLISHER:</span><b>MrHateful Games</b>
+      </div>
+      <div class="tags"><span>Space</span><span>Shoot 'Em Up</span><span>Top-Down Shooter</span><span>Action</span><span>Sci-fi</span><span>Singleplayer</span><span>Controller</span><span>Story Rich</span><span>Indie</span></div>
+    </div>
+  </div>
+
+  <div class="wish"><h2>Cosmic Commando is coming soon</h2><a class="btn" href="#">Add to your wishlist</a></div>
+
+  <div class="cols">
+    <div class="about">
+      <h3>About this game</h3>
+      <p class="big">ONE SHIP. ONE COMMANDER. EIGHTEEN STAR SYSTEMS.</p>
+      <p>Cosmic Commando is a top-down space combat game set in a scaled, real solar system and the stars around it. You fly the Commander, humanity's newest fighter, from Earth orbit to the alien-held stars beyond the jump gates.</p>
+      <img src="../images/clip_battle.gif" alt="">
+      <p class="big">ANSWER THE MAYDAY</p>
+      <p>Battle groups call for help across human space. Fight beside carriers, battleships and destroyers while thirty allied fighters launch around you, and hold the line until the hospital ship arrives.</p>
+      <img src="../images/clip_wave.gif" alt="">
+      <p class="big">TAKE THE JOB, LAUNCH</p>
+      <p>Dock at orbital stations for station defence, escorts, convoys, rescues and bounty hunts on named alien Overseers. Spend your credits on ten tiers of shields, hull, engines and weapons.</p>
+      <img src="../images/clip_dock.gif" alt="">
+      <p class="big">REAL STARS, REAL DISTANCES</p>
+      <p>Jump through the gates to Alpha Centauri, Tau Ceti, Sirius and TRAPPIST-1. Each system has its own planets, stations, nebulas, asteroid belts and wrecks to salvage.</p>
+      <img src="../images/clip_gate.gif" alt="">
+      <h3>AI generated content disclosure</h3>
+      <p class="ai">Example wording: "Some in-game portraits, scenery and illustrations were created with the help of generative AI tools and then edited by the developer." Fill this in honestly for whatever ships in the final build.</p>
+      <h3>System requirements (draft)</h3>
+      <p class="ai">MINIMUM: Windows 10 64-bit, 4 GB RAM, OpenGL 3.3 / Vulkan capable GPU, 1 GB storage. Also on Linux and macOS. Controller: PlayStation and Xbox pads fully supported.</p>
+    </div>
+    <div>
+      <div class="box"><h3>Languages</h3><ul><li>English: interface, subtitles</li><li>French: interface, subtitles</li></ul></div>
+      <div class="box"><h3>Features</h3><ul><li>Single-player</li><li>Full controller support</li><li>Steam Deck: to be tested</li></ul></div>
+      <div class="box"><h3>Developer</h3><img src="../images/mrhateful-games-logo.png" alt="MrHateful Games" style="width:140px;display:block;margin:auto"></div>
+    </div>
+  </div>
+
+  <div class="about">
+    <h3>Capsule art sizes (mock-ups for the artist brief)</h3>
+    <div class="caps">
+      <figure><img src="img/main_1232x706.jpg" alt=""><figcaption>Main capsule 1232 x 706</figcaption></figure>
+      <figure><img src="img/header_920x430.jpg" alt=""><figcaption>Header capsule 920 x 430</figcaption></figure>
+      <figure><img src="img/small_462x174.jpg" alt=""><figcaption>Small capsule 462 x 174 (title must read at this size)</figcaption></figure>
+      <figure><img src="img/vertical_748x896.jpg" alt=""><figcaption>Vertical capsule 748 x 896</figcaption></figure>
+      <figure><img src="img/library_hero_1920x620.jpg" alt=""><figcaption>Library hero (no text)</figcaption></figure>
+    </div>
+  </div>
+</div>
+<script>
+  const main=document.getElementById('main');
+  document.querySelectorAll('#strip img').forEach(t=>t.addEventListener('click',()=>{
+    document.querySelectorAll('#strip img').forEach(x=>x.classList.remove('on')); t.classList.add('on');
+    main.src=t.dataset.full||t.src; }));
+</script>
+</body>
+</html>
