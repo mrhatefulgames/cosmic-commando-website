@@ -98,7 +98,8 @@ section { padding: 72px max(var(--gutter), 6vw); }
 .facts dd { margin: 0; }
 
 .footer { text-align: center; padding: 40px var(--gutter) 60px; border-top: 1px solid var(--frame-dim); color: var(--text-dim); font-size: 16px; }
-.footer-logo { width: min(220px, 60vw); height: auto; margin-bottom: 12px; }
+.footer-logo { width: min(220px, 60vw); height: auto; margin-bottom: 12px; transition: transform 0.2s; }
+a:hover .footer-logo { transform: scale(1.05); }
 
 .lightbox { position: fixed; inset: 0; z-index: 20; background: rgba(0, 0, 0, 0.9); display: flex; align-items: center; justify-content: center; padding: var(--gutter); cursor: zoom-out; }
 .lightbox[hidden] { display: none; }
