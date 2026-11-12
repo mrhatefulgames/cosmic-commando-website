@@ -2,7 +2,7 @@
 
 The public website for Cosmic Commando by MrHateful Games: one static page (`index.html`,
 `style.css`, `site.js`), no build step. GitHub Pages serves it straight from `main` (root folder),
-so a push to `main` is live a minute later at https://michaeljburton.github.io/cosmic-commando-website/.
+so a push to `main` is live a minute later at https://mrhatefulgames.github.io/cosmic-commando-website/.
 
 The game's own (private) repo keeps a copy in `website/`; this repo is the one that is published.
 
